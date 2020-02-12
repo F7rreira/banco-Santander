@@ -1,5 +1,5 @@
 public class Cliente {
-    private Double numConta;
+    private double numConta;
     private String sobrenome;
     private double rg;
     private String cpf;
@@ -34,11 +34,11 @@ public class Cliente {
         this.rg = rg;
     }
 
-    public double getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(double cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
