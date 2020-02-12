@@ -2,8 +2,14 @@ public class Cliente {
     private Double numConta;
     private String sobrenome;
     private double rg;
-    private double cpf;
+    private String cpf;
 
+    public Cliente(double numConta, String sobrenome, double rg, String cpf) {
+        this.numConta = numConta;
+        this.sobrenome = sobrenome;
+        this.rg = rg;
+        this.cpf = cpf;
+    }
     public Double getNumConta() {
         return numConta;
     }
@@ -36,12 +42,8 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public Cliente(double numConta, String sobrenome, double rg, double cpf) {
-        this.numConta = numConta;
-        this.sobrenome = sobrenome;
-        this.rg = rg;
-        this.cpf = cpf;
-    }
+
+
 
 
 }
