@@ -12,7 +12,7 @@ public class ContaPoupanca {
     public double getSaldo() {
         return saldo;
     }
-
+                                                    //get para eu conseguir consultar meu saldo
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
@@ -46,6 +46,6 @@ public class ContaPoupanca {
     }
 
     public double getsaldo() {
-        return this.saldo;
+        return this.saldo;              // retorno do saldo !
     }
 }

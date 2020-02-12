@@ -7,7 +7,7 @@ public class ContaCorrente {
 
 
     public ContaCorrente(Cliente cliente, double saldo, double saldoEspecial) {
-        Cliente = cliente;
+        Cliente = cliente;                                  //construtor
         this.saldo = saldo;
         this.saldoEspecial=saldoEspecial;
 
@@ -44,7 +44,7 @@ public class ContaCorrente {
                 System.out.println("Saque realizado com sucesso");
             } else {
 
-                var flag = sacar - this.saldo;   // pegando diferença para retirar do cheque especial.
+                var flag = sacar - this.saldo;   // pegando a diferença para retirar do cheque especial.
                 this.saldo = 0;
                 this.saldoEspecial -= flag;
                 System.out.println("saque realizado do cheque especial com sucesso");
@@ -56,10 +56,10 @@ public class ContaCorrente {
         }
     }
 
-        public void depositarCheques ( double cheque, String BancoEmissor, String data){
+        public void depositarCheques ( double cheque){
             if (cheque > 0) {
                 this.saldo += cheque;
-
+                System.out.println("cheque depositado com sucesso");   //para depositar o cheque
             }
 
         }

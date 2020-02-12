@@ -6,11 +6,9 @@ public class Main {
 
         ContaPoupanca contaP = new ContaPoupanca(cliente1, 300);
         ContaCorrente contaC = new ContaCorrente(cliente1 , 100, 100 );
-        contaP.saque(300);
-        System.out.println(contaP.getSaldo());
-        contaP.deposito(100);
-        System.out.println(contaP.getSaldo());
-        System.out.println(contaP.getSaldoJuros());
+
+        contaC.depositarCheques(300);
+        System.out.println(contaC.getSaldo());
 
 
     }
